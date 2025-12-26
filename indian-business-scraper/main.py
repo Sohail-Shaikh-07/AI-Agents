@@ -90,6 +90,11 @@ def main():
     places = PlacesEngine(config)
     sheets = SheetManager(config)
 
+
+    # Passing 'sheets' to PersistenceManager so it can save state to the cloud
+    memory = PersistenceManager(sheets)
+    notify = Notifier(config, sheet_manager=sheets)
+
     # 2. Load Data
     hierarchy, categories = load_inputs()
     if not hierarchy:
@@ -97,6 +102,12 @@ def main():
         return
 
     print(f"📊 Total Districts to Process: {len(hierarchy)}")
+
+    # 3. Load Progress
+    progress = memory.load_progress()
+    p_dist_idx = progress.get("dist_idx", 0)
+    current_dist_idx = p_dist_idx
+    print(f"📖 Resuming from District Index: {p_dist_idx}")
 
     # 3. Main Loop
     for state, district, cities in hierarchy:
@@ -123,5 +134,5 @@ def main():
                 time.sleep(1) # Polite delay
 
 
-if __name__ == "**main**":
+if __name__ == "__main__":
     main()
