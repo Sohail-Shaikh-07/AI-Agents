@@ -1,0 +1,7 @@
+requests
+gspread
+oauth2client
+python-dotenv
+google-auth
+resend
+flask
