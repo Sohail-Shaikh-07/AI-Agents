@@ -1,0 +1,463 @@
+{
+  "Assam": {
+    "totalDistricts": 35,
+    "totalPlaces": 254,
+    "lastUpdated": "August 2023",
+    "data": [
+      {
+        "district": "Baksa",
+        "places": [
+          "Mushalpur",
+          "Salbari",
+          "Tamulpur",
+          "Baksa",
+          "Barama",
+          "Goreswar",
+          "Bagmara",
+          "Ghograpar",
+          "Barnagar",
+          "Bajali",
+          "Jalah",
+          "Patharighat",
+          "Rangia",
+          "Sarupeta",
+          "Tihu"
+        ]
+      },
+      {
+        "district": "Bajali",
+        "places": [
+          "Pathsala",
+          "Tihu",
+          "Pathsala",
+          "Bajali",
+          "Jaleswar"
+        ]
+      },
+      {
+        "district": "Barpeta",
+        "places": [
+          "Barpeta",
+          "Mankachar",
+          "Barpeta",
+          "Chenga",
+          "Baghbar",
+          "Kalgachia",
+          "Sarthebari",
+          "Barnagar"
+        ]
+      },
+      {
+        "district": "Bongaigaon",
+        "places": [
+          "Bongaigaon",
+          "Abhayapuri",
+          "Bongaigaon",
+          "Abhayapuri",
+          "Bogribari",
+          "Panchnoi",
+          "Bilasipara"
+        ]
+      },
+      {
+        "district": "Chirang",
+        "places": [
+          "Kajalgaon",
+          "Sorbhog",
+          "Ruing",
+          "Kajalgaon",
+          "Sorbhog",
+          "Parbatjhora",
+          "Lakhimpur",
+          "Shalbari"
+        ]
+      },
+      {
+        "district": "Dhubri",
+        "places": [
+          "Dhubri",
+          "Bilasipara",
+          "Dhubri",
+          "Golakganj",
+          "Rotanpur",
+          "Bilasipara",
+          "Hasimara",
+          "Phulbari"
+        ]
+      },
+      {
+        "district": "Goalpara",
+        "places": [
+          "Goalpara",
+          "Jaleswar",
+          "Goalpara",
+          "Dolabari",
+          "Jaleswar",
+          "Dhuburighat",
+          "Ramnagar"
+        ]
+      },
+      {
+        "district": "Kamrup Metropolitan",
+        "places": [
+          "Guwahati",
+          "Sonapur",
+          "Chandrapur",
+          "Guwahati",
+          "Sonapur",
+          "Chandrapur",
+          "Chaygaon",
+          "Hajo",
+          "Palasbari",
+          "Bongaigaon"
+        ]
+      },
+      {
+        "district": "Kamrup Rural",
+        "places": [
+          "Amingaon",
+          "Harisinga",
+          "Kanakpur",
+          "Amingaon",
+          "Harisinga",
+          "Kanakpur",
+          "Rangia",
+          "Morigaon",
+          "Tihu"
+        ]
+      },
+      {
+        "district": "Kokrajhar",
+        "places": [
+          "Kokrajhar",
+          "Gossaigaon",
+          "Kokrajhar",
+          "Binakandi",
+          "Khutikhola",
+          "Gossaigaon",
+          "Morigaon",
+          "Dotma",
+          "Barama",
+          "Bilasipara"
+        ]
+      },
+      {
+        "district": "Nalbari",
+        "places": [
+          "Nalbari",
+          "Bilsi",
+          "Nalbari",
+          "Chaygaon",
+          "Palasbari",
+          "Bilsi"
+        ]
+      },
+      {
+        "district": "South Salmara-Mankachar",
+        "places": [
+          "Hatsingimari",
+          "Hatsingimari",
+          "Mankachar"
+        ]
+      },
+      {
+        "district": "Tamulpur",
+        "places": [
+          "Tamulpur",
+          "Tamulpur",
+          "Goreswar"
+        ]
+      },
+      {
+        "district": "Charaideo",
+        "places": [
+          "Sonari",
+          "Sibsagar",
+          "Sonari",
+          "Sibsagar",
+          "Teok",
+          "Nazira"
+        ]
+      },
+      {
+        "district": "Dhemaji",
+        "places": [
+          "Dhemaji",
+          "Lakhimpur",
+          "Dhemaji",
+          "Mariani",
+          "Golaghat",
+          "Monabari"
+        ]
+      },
+      {
+        "district": "Dibrugarh",
+        "places": [
+          "Dibrugarh",
+          "Chumoukedima",
+          "Tingrai",
+          "Dibrugarh",
+          "Chumoukedima",
+          "Duliajan",
+          "Khowang",
+          "Roxam",
+          "Tingrai",
+          "Naharkatiya"
+        ]
+      },
+      {
+        "district": "Golaghat",
+        "places": [
+          "Golaghat",
+          "Bokakhat",
+          "Nagaon",
+          "Golaghat",
+          "Bokakhat",
+          "Karbi Anglong",
+          "Nagaon",
+          "Samaguri"
+        ]
+      },
+      {
+        "district": "Jorhat",
+        "places": [
+          "Jorhat",
+          "Titabor",
+          "Mariani",
+          "Jorhat",
+          "Titabor",
+          "Mariani",
+          "Nellie",
+          "Nowhera",
+          "Tongleng"
+        ]
+      },
+      {
+        "district": "Lakhimpur",
+        "places": [
+          "North Lakhimpur",
+          "Dhakuakhana",
+          "Bihpuria",
+          "North Lakhimpur",
+          "Dhakuakhana",
+          "Bihpuria",
+          "Gogamukh",
+          "Bordoloi",
+          "Gohpur",
+          "Simen"
+        ]
+      },
+      {
+        "district": "Majuli",
+        "places": [
+          "Garamur",
+          "Majuli",
+          "Garamur",
+          "Majuli",
+          "Aphalamukh",
+          "Kamalabari"
+        ]
+      },
+      {
+        "district": "Sivasagar",
+        "places": [
+          "Sivasagar",
+          "Nazira",
+          "Sivasagar",
+          "Nazira",
+          "Teok",
+          "Demow"
+        ]
+      },
+      {
+        "district": "Tinsukia",
+        "places": [
+          "Tinsukia",
+          "Margherita",
+          "Tinsukia",
+          "Margherita",
+          "Kakopat",
+          "Naharkatiya",
+          "Doomdooma"
+        ]
+      },
+      {
+        "district": "Biswanath",
+        "places": [
+          "Biswanath Chariali",
+          "Gohpur",
+          "Biswanath",
+          "Gohpur",
+          "Behali",
+          "Moranhat"
+        ]
+      },
+      {
+        "district": "Darrang",
+        "places": [
+          "Mangaldai",
+          "Kaliabor",
+          "Mangaldai",
+          "Balipara",
+          "Kaliabor",
+          "Mayeng",
+          "Dalgaon",
+          "Sundorpur"
+        ]
+      },
+      {
+        "district": "Sonitpur",
+        "places": [
+          "Tezpur",
+          "Sootea",
+          "Jamugurihat",
+          "Tezpur",
+          "Sootea",
+          "Jamugurihat",
+          "Mihira",
+          "Behali",
+          "Borhat",
+          "Sepon"
+        ]
+      },
+      {
+        "district": "Udalguri",
+        "places": [
+          "Udalguri",
+          "Harisinga",
+          "Tezpur",
+          "Udalguri",
+          "Harisinga",
+          "Kaloi",
+          "Ukiam",
+          "Dimakoli"
+        ]
+      },
+      {
+        "district": "Dima Hasao",
+        "places": [
+          "Haflong",
+          "Maibang",
+          "Maram",
+          "Haflong",
+          "Maibang",
+          "Maram",
+          "Ashlong",
+          "Harangajao",
+          "Diyungbra"
+        ]
+      },
+      {
+        "district": "Hojai",
+        "places": [
+          "Sankardev Nagar",
+          "Puranigudam",
+          "Sankardev Nagar",
+          "Puranigudam",
+          "Lumding",
+          "Mahur",
+          "Bokajan"
+        ]
+      },
+      {
+        "district": "Karbi Anglong",
+        "places": [
+          "Diphu",
+          "Bokajan",
+          "Doilungmukh",
+          "Diphu",
+          "Bokajan",
+          "Doilungmukh",
+          "Hamren",
+          "Merapani",
+          "Dillai",
+          "Baithalangso",
+          "Sutnga",
+          "Armurti",
+          "Umrangso"
+        ]
+      },
+      {
+        "district": "Morigaon",
+        "places": [
+          "Morigaon",
+          "Laharighat",
+          "Raha",
+          "Morigaon",
+          "Laharighat",
+          "Raha",
+          "Morikhona",
+          "Udarbond",
+          "Jagiroad"
+        ]
+      },
+      {
+        "district": "Nagaon",
+        "places": [
+          "Nagaon",
+          "Hojai",
+          "Lumding",
+          "Kaliabor",
+          "Nagaon",
+          "Nagaon Sadar",
+          "Horendi",
+          "Katlicherra",
+          "Bardowa",
+          "Jagi Road",
+          "Raha",
+          "Hojai",
+          "Lumding"
+        ]
+      },
+      {
+        "district": "West Karbi Anglong",
+        "places": [
+          "Hamren",
+          "Bokajan",
+          "Hamren",
+          "Bokajan",
+          "Dillai",
+          "Merapani"
+        ]
+      },
+      {
+        "district": "Cachar",
+        "places": [
+          "Silchar",
+          "Karimganj",
+          "Srimanta Sankaradeva",
+          "Silchar",
+          "Lala",
+          "Dhalai",
+          "Sonai",
+          "Katlicherra",
+          "Tarapur",
+          "Udharbond"
+        ]
+      },
+      {
+        "district": "Hailakandi",
+        "places": [
+          "Hailakandi",
+          "Floodghat",
+          "Hailakandi",
+          "Floodghat",
+          "Lala",
+          "Katlicherra"
+        ]
+      },
+      {
+        "district": "Karimganj",
+        "places": [
+          "Karimganj",
+          "Ramakrishnapur",
+          "Karimganj",
+          "Ramakrishnapur",
+          "Kanaighat",
+          "Sonai",
+          "Tarapur"
+        ]
+      }
+    ]
+  }
+}
