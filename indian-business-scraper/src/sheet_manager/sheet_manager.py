@@ -134,7 +134,7 @@ class SheetManager:
         If it doesn't exist, it CREATES it and SHARES it with the Admin.
         """
         if not self.client:
-            self._authenticate()
+             self._authenticate()
 
         safe_name = "".join(c if c.isalnum() else "_" for c in state_name)
         sheet_title = f"IBD_{safe_name}"
@@ -150,13 +150,9 @@ class SheetManager:
                 self.current_spreadsheet = self.client.create(sheet_title)
                 if self.config.admin_email:
                     print(f"🤝 Sharing {sheet_title} with {self.config.admin_email}...")
-                    self.current_spreadsheet.share(
-                        self.config.admin_email, perm_type="user", role="writer"
-                    )
+                    self.current_spreadsheet.share(self.config.admin_email, perm_type='user', role='writer')
                 else:
-                    print(
-                        "⚠️ ADMIN_EMAIL not set! Sheet hidden in Service Account drive."
-                    )
+                    print("⚠️ ADMIN_EMAIL not set! Sheet hidden in Service Account drive.")
             except Exception as e:
                 print(f"❌ Failed to create/share sheet '{sheet_title}': {e}")
                 # Fallback
@@ -164,6 +160,7 @@ class SheetManager:
                     self.current_spreadsheet = self.client.open_by_url(self.sheet_url)
                 else:
                     self.current_spreadsheet = self.client.open_by_key(self.sheet_url)
+
 
     def _get_active_worksheet(self, spreadsheet, base_name: str):
         """
