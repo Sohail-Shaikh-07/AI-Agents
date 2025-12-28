@@ -201,3 +201,67 @@ class SheetManager:
             ws.freeze(rows=1)
         except:
             pass
+
+    def log_dead_key(self, key_name: str, error_msg: str):
+        """
+        Logs a dead/expired API key to the 'Dead_Keys' worksheet.
+        """
+        try:
+            worksheet_name = "Dead_Keys"
+            try:
+                ws = self.client.open_by_url(self.sheet_url).worksheet(worksheet_name)
+            except gspread.WorksheetNotFound:
+                ws = self.client.open_by_url(self.sheet_url).add_worksheet(
+                    worksheet_name, 1000, 5
+                )
+                ws.append_row(["Key Name", "Error Message", "Timestamp"])
+                ws.format("A1:C1", {"textFormat": {"bold": True}})
+
+            ws.append_row(
+                [key_name, error_msg, datetime.now().strftime("%Y-%m-%d %H:%M:%S")]
+            )
+            print(f"💀 Dead Key Logged: {key_name}")
+
+        except Exception as e:
+            print(f"❌ Failed to log dead key: {e}")
+
+    def log_district_report(self, state: str, district: str, city_stats: dict):
+        """
+        Logs district summary stats to 'District_Reports' worksheet.
+        """
+        try:
+            worksheet_name = "District_Reports"
+            try:
+                ws = self.client.open_by_url(self.sheet_url).worksheet(worksheet_name)
+            except gspread.WorksheetNotFound:
+                ws = self.client.open_by_url(self.sheet_url).add_worksheet(
+                    worksheet_name, 1000, 6
+                )
+                ws.append_row(
+                    [
+                        "State",
+                        "District",
+                        "Total Cities",
+                        "Total Records",
+                        "Timestamp",
+                        "Stats JSON",
+                    ]
+                )
+                ws.format("A1:F1", {"textFormat": {"bold": True}})
+
+            total_records = sum(sum(cats.values()) for cats in city_stats.values())
+
+            ws.append_row(
+                [
+                    state,
+                    district,
+                    len(city_stats),
+                    total_records,
+                    datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                    json.dumps(city_stats),
+                ]
+            )
+            print(f"📊 District Report Logged for {district}")
+
+        except Exception as e:
+            print(f"❌ Failed to log district report: {e}")

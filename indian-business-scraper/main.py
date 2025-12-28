@@ -85,7 +85,7 @@ def load_inputs():
 def main():
     print("🚀 Starting Indian Business Scraper Agent...")
 
-    # 1. Init Config & Modules
+    # Init Config & Modules
     config = ConfigManager()
     places = PlacesEngine(config)
     sheets = SheetManager(config)
@@ -95,7 +95,7 @@ def main():
     memory = PersistenceManager(sheets)
     notify = Notifier(config, sheet_manager=sheets)
 
-    # 2. Load Data
+    # Load Data
     hierarchy, categories = load_inputs()
     if not hierarchy:
         print("❌ No data to process based on current filter.")
@@ -103,13 +103,14 @@ def main():
 
     print(f"📊 Total Districts to Process: {len(hierarchy)}")
 
-    # 3. Load Progress
+    # Load Progress
     progress = memory.load_progress()
     p_dist_idx = progress.get("dist_idx", 0)
     current_dist_idx = p_dist_idx
     print(f"📖 Resuming from District Index: {p_dist_idx}")
+    
 
-    # 3. Main Loop
+    # Main Loop
     for state, district, cities in hierarchy:
 
         # Ensure we are logged into the correct State Sheet (Auto-Switch)
@@ -130,6 +131,8 @@ def main():
                     # Save
                     sheets.append_data(results)
                     print(f"    ✅ Saved {len(results)} rows.")
+                    # Pass 0 for other indices as we simplified to district-level
+                    memory.save_progress(0, current_dist_idx, 0, 0)
 
                 time.sleep(1) # Polite delay
 
