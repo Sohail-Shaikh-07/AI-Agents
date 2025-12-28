@@ -1,0 +1,369 @@
+{
+  "ArunachalPradesh": {
+    "totalDistricts": 28,
+    "totalPlaces": 318,
+    "lastUpdated": "February 2024",
+    "data": [
+      {
+        "district": "Tawang",
+        "places": [
+          "Tawang",
+          "Tawang Town",
+          "Jang",
+          "Mukto",
+          "Thingbu",
+          "Namsang",
+          "Zemithang",
+          "Lumla",
+          "Dudunghar"
+        ]
+      },
+      {
+        "district": "West Kameng",
+        "places": [
+          "Bomdila",
+          "Kalaktang",
+          "Rupa",
+          "Nafra",
+          "Dirang",
+          "Bhalukpong",
+          "Thrizino",
+          "Jamiri",
+          "Singchung",
+          "Balemu"
+        ]
+      },
+      {
+        "district": "East Kameng",
+        "places": [
+          "Seppa",
+          "Lada",
+          "Bameng",
+          "Pipu",
+          "Khenewa",
+          "Chayangtajo",
+          "Sawa"
+        ]
+      },
+      {
+        "district": "Pakke-Kessang",
+        "places": [
+          "Lemmi",
+          "Pakke Kessang",
+          "Seijosa",
+          "Pijiriang",
+          "Passa Valley",
+          "Dissing Passo",
+          "Richukrong"
+        ]
+      },
+      {
+        "district": "Bichom",
+        "places": [
+          "Napangphung",
+          "Kaying",
+          "Rilo",
+          "Sessa"
+        ]
+      },
+      {
+        "district": "Papum Pare",
+        "places": [
+          "Yupia",
+          "Itanagar",
+          "Naharlagun",
+          "Doimukh",
+          "Sagalee",
+          "Leporiang",
+          "Mengio",
+          "Kimin",
+          "Banderdewa"
+        ]
+      },
+      {
+        "district": "Itanagar Capital Complex",
+        "places": [
+          "Itanagar",
+          "Naharlagun",
+          "Banderdewa",
+          "Jollang",
+          "Balri"
+        ]
+      },
+      {
+        "district": "Kurung Kumey",
+        "places": [
+          "Koloriang",
+          "Chambang",
+          "Sangram",
+          "Nyapin",
+          "Longding Koling",
+          "Tali",
+          "Kamporijo",
+          "Dollungmukh"
+        ]
+      },
+      {
+        "district": "Kra Daadi",
+        "places": [
+          "Jamin",
+          "Koloriang",
+          "Palin",
+          "Yangte",
+          "Balijan"
+        ]
+      },
+      {
+        "district": "Kamle",
+        "places": [
+          "Raga",
+          "Sarli",
+          "Parsi-Parlo",
+          "Damin",
+          "Sangram",
+          "Nyapin"
+        ]
+      },
+      {
+        "district": "Lower Subansiri",
+        "places": [
+          "Ziro",
+          "Hapoli",
+          "Yachuli",
+          "Pistana",
+          "Palin",
+          "Yangte",
+          "Kamba"
+        ]
+      },
+      {
+        "district": "Keyi Panyor",
+        "places": [
+          "Yachuli",
+          "Yangte",
+          "Palin",
+          "Likabali",
+          "Kangku"
+        ]
+      },
+      {
+        "district": "Upper Subansiri",
+        "places": [
+          "Daporijo",
+          "Puchi Geko",
+          "Dumporijo",
+          "Baririjo",
+          "Taliha",
+          "Payeng",
+          "Giba",
+          "Nacho",
+          "Siyum",
+          "Taksing",
+          "Limeking"
+        ]
+      },
+      {
+        "district": "West Siang",
+        "places": [
+          "Aalo",
+          "Along",
+          "Basar",
+          "Daring",
+          "Gensi",
+          "Likabali",
+          "Kangku",
+          "Bagra",
+          "Yomcha",
+          "Liromoba",
+          "Jomlo Mobuk",
+          "Rumgong",
+          "Kamba",
+          "Kayan",
+          "Darak",
+          "Tirbin"
+        ]
+      },
+      {
+        "district": "Lepa-Rada",
+        "places": [
+          "Basar",
+          "Tirbin",
+          "Daring",
+          "Sago",
+          "Gensi",
+          "Ravine",
+          "Rumgong"
+        ]
+      },
+      {
+        "district": "Shi-Yomi",
+        "places": [
+          "Tato",
+          "Mechuka",
+          "Monigong",
+          "Pidi",
+          "Yomgo",
+          "Sagalee"
+        ]
+      },
+      {
+        "district": "Siang",
+        "places": [
+          "Boleng",
+          "Riga",
+          "Pangin",
+          "Rebo-Perging",
+          "Koyu",
+          "Nari",
+          "Pangin Circle"
+        ]
+      },
+      {
+        "district": "Lower Siang",
+        "places": [
+          "Likabali",
+          "Kangku",
+          "Yomcha"
+        ]
+      },
+      {
+        "district": "East Siang",
+        "places": [
+          "Pasighat",
+          "Mebo",
+          "Sunpura",
+          "New Seren",
+          "Bilat",
+          "Ruksin",
+          "Sille-Oyan",
+          "Rani",
+          "Kalipur"
+        ]
+      },
+      {
+        "district": "Upper Siang",
+        "places": [
+          "Yingkiong",
+          "Jengging",
+          "Geku",
+          "Mariyang",
+          "Katan",
+          "Migging",
+          "Palling",
+          "Gelling",
+          "Singa",
+          "Tuting",
+          "Oyan"
+        ]
+      },
+      {
+        "district": "Tirap",
+        "places": [
+          "Khonsa",
+          "Kanubari",
+          "Pumao",
+          "Pangchao",
+          "Wakka",
+          "Laju",
+          "Longding"
+        ]
+      },
+      {
+        "district": "Changlang",
+        "places": [
+          "Changlang",
+          "Khimiyong",
+          "Namtok",
+          "Yatdam",
+          "Kantang",
+          "Miao",
+          "Kharsang",
+          "Vijoynagar",
+          "Namphai-1",
+          "Nampong",
+          "Manmao",
+          "Jairampur",
+          "Rima-Putak",
+          "Renuk",
+          "Lyngok-Longtoi",
+          "Bordumsa",
+          "Diyun"
+        ]
+      },
+      {
+        "district": "Longding",
+        "places": [
+          "Longding",
+          "Pumao",
+          "Wakka",
+          "Pangchao",
+          "Kanubari",
+          "Tali",
+          "Kamporijo",
+          "Dollungmukh"
+        ]
+      },
+      {
+        "district": "Namsai",
+        "places": [
+          "Namsai",
+          "Lekang",
+          "Piyong",
+          "Lathaw",
+          "Chongkham",
+          "Bordumsa"
+        ]
+      },
+      {
+        "district": "Lohit",
+        "places": [
+          "Tezu",
+          "Sunpura",
+          "Hayuliang",
+          "Manchal",
+          "Goiliang",
+          "Chaglagam",
+          "Kamlang Wildlife Sanctuary"
+        ]
+      },
+      {
+        "district": "Anjaw",
+        "places": [
+          "Hawai",
+          "Kibithoo",
+          "Walong",
+          "Wakro",
+          "Chowkham",
+          "Metengliang",
+          "Lampo Passo",
+          "Vijoynagar"
+        ]
+      },
+      {
+        "district": "Dibang Valley",
+        "places": [
+          "Anini",
+          "Etalin",
+          "Anelih",
+          "Kronli",
+          "Mipi",
+          "Hunli",
+          "Desali"
+        ]
+      },
+      {
+        "district": "Lower Dibang Valley",
+        "places": [
+          "Roing",
+          "Dambuk",
+          "Anpum-Paglam",
+          "Hunli",
+          "Desali",
+          "Koronu",
+          "Parbuk",
+          "Etalin"
+        ]
+      }
+    ]
+  }
+}
