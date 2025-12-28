@@ -38,6 +38,7 @@ def load_inputs():
     files.sort()
     print(f"📂 Loading Inputs from {len(files)} files...")
 
+
     for fpath in files:
         try:
             with open(fpath, "r", encoding="utf-8") as f:
@@ -71,6 +72,8 @@ def load_inputs():
 
         except Exception as e:
             print(f"❌ Error reading {fpath}: {e}")
+
+            
 
     # Load Categories
     cat_path = os.path.join(os.path.dirname(__file__), "inputs", "categories.json")

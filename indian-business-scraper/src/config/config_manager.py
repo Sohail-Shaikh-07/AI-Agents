@@ -20,6 +20,7 @@ class ConfigManager:
             "GOOGLE_SHEETS_CREDENTIALS_PATH", "credentials.json"
         )
         self.openrouter_api_key = os.getenv("OPENROUTER_API_KEY")
+        self.admin_email = os.getenv("ADMIN_EMAIL")
         self.resend_api_key = os.getenv("RESEND_API_KEY")
         self.admin_email = os.getenv("ADMIN_EMAIL")  # Required for sharing
 
