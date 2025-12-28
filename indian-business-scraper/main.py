@@ -72,7 +72,6 @@ def load_inputs():
 
         except Exception as e:
             print(f"❌ Error reading {fpath}: {e}")
-
             
 
     # Load Categories
