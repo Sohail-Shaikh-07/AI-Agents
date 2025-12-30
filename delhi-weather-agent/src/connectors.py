@@ -29,9 +29,9 @@ class GoogleSheetConnector:
     def _authenticate(self):
         """Authenticates using Service Account JSON."""
         # 1. Dev Mode: Look for local file
-        if os.path.exists("service_account.json"):
+        if os.path.exists("credential.json"):
             creds = ServiceAccountCredentials.from_json_keyfile_name(
-                "service_account.json", self.scope
+                "credential.json", self.scope
             )
         # 2. Prod Mode (Render): Look for Base64 Env Var
         elif os.getenv(GOOGLE_JSON_ENV_VAR):
@@ -41,11 +41,11 @@ class GoogleSheetConnector:
             )
         else:
             raise FileNotFoundError(
-                "Service Account credentials not found (Checked 'service_account.json' and 'GOOGLE_JSON' env var)."
+                "Service Account credentials not found (Checked 'credential.json' and 'GOOGLE_JSON' env var)."
             )
 
         return gspread.authorize(creds)
-    
+
     def write_data(self, worksheet_name: str, data: list):
         """
         Writes rows to a specific worksheet (Tab).
