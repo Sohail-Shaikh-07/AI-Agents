@@ -45,3 +45,40 @@ class GoogleSheetConnector:
             )
 
         return gspread.authorize(creds)
+    
+    def write_data(self, worksheet_name: str, data: list):
+        """
+        Writes rows to a specific worksheet (Tab).
+        Creates the tab if it doesn't exist.
+        """
+        try:
+            ws = self.sheet.worksheet(worksheet_name)
+        except gspread.WorksheetNotFound:
+            print(f"[GSheet] Tab '{worksheet_name}' not found. Creating...")
+            ws = self.sheet.add_worksheet(title=worksheet_name, rows="1000", cols="20")
+            header = [
+                "date_ist",
+                "time_ist",
+                "location",
+                "lat",
+                "lon",
+                "temp_c",
+                "humidity",
+                "pressure_mb",
+                "windspeed_kph",
+                "visibility_km",
+                "uv_index",
+                "condition_text",
+                "description",
+                "aqi_index",
+                "pm2_5",
+                "pm10",
+                "co",
+                "no2",
+            ]
+            ws.append_row(header)
+
+        # Append new rows
+        if data:
+            ws.append_rows(data, value_input_option="USER_ENTERED")
+            print(f"[GSheet] Appended {len(data)} rows to {worksheet_name}")
