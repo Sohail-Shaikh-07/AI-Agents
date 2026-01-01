@@ -35,3 +35,55 @@ class GoogleSheetConnector:
                     f"👉 ACTION REQUIRED: Open the Google Sheet -> Click 'Share' -> Add your Service Account Email (from your JSON file) as Editor."
                 )
             raise e
+        
+    def _authenticate(self):
+        """Authenticates using Service Account JSON."""
+        if os.path.exists("credential.json"):
+            creds = ServiceAccountCredentials.from_json_keyfile_name(
+                "credential.json", self.scope
+            )
+        elif os.getenv(GOOGLE_JSON_ENV_VAR):
+            json_str = base64.b64decode(os.getenv(GOOGLE_JSON_ENV_VAR)).decode("utf-8")
+            creds = ServiceAccountCredentials.from_json_keyfile_dict(
+                json.loads(json_str), self.scope
+            )
+        else:
+            raise FileNotFoundError(
+                "Service Account credentials not found (Checked 'credential.json' and 'GOOGLE_JSON' env var)."
+            )
+
+        return gspread.authorize(creds)
+
+    def write_data(self, worksheet_name: str, data: list, header_list: list = None):
+        try:
+            ws = self.sheet.worksheet(worksheet_name)
+        except gspread.WorksheetNotFound:
+            print(f"[GSheet] Tab '{worksheet_name}' not found. Creating...")
+            ws = self.sheet.add_worksheet(title=worksheet_name, rows="1000", cols="20")
+            header = (
+                header_list
+                if header_list
+                else [
+                    "date_ist",
+                    "time_ist",
+                    "location",
+                    "lat",
+                    "lon",
+                    "temp_c",
+                    "humidity",
+                    "pressure_mb",
+                    "windspeed_kph",
+                    "visibility_km",
+                    "condition_text",
+                    "aqi_index",
+                    "pm2_5",
+                    "pm10",
+                    "co",
+                    "no2",
+                ]
+            )
+            ws.append_row(header)
+
+        if data:
+            ws.append_rows(data, value_input_option="USER_ENTERED")
+            print(f"[GSheet] Appended {len(data)} rows to {worksheet_name}")
