@@ -20,3 +20,10 @@ TARGET_HOURS = [h for h in range(24)]
 DATE_FORMAT_OUTPUT = "%d/%m/%Y"  # DD/MM/YYYY
 TIME_FORMAT_OUTPUT = "%H:%M"  # HH:MM (24-hour)
 TIMEZONE = "Asia/Kolkata"
+
+# --- Google Sheets ---
+GOOGLE_SHEET_ID = os.getenv("GOOGLE_SHEET_ID")
+GOOGLE_JSON_ENV_VAR = "GOOGLE_JSON"
+
+# --- Limits & Safety ---
+REQUEST_DELAY_SECONDS = 0.5
