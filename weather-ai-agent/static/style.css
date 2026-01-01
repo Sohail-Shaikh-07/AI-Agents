@@ -357,3 +357,10 @@ input[type="checkbox"] {
     opacity: 1;
   }
 }
+
+/* Responsive */
+@media (max-width: 850px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
