@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Agent | AI Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css?v=2.1" />
+  </head>
+  <body>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <div class="container">
+      <!-- Left Panel: Controls -->
+      <div class="controls-panel">
+        <h1>Weather Agent AI</h1>
+        <p class="subtitle">Autonomous Data Collection System</p>
+
+        <div class="control-group">
+          <label>Target Location</label>
+          <div class="search-wrapper">
+            <input
+              type="text"
+              id="cityInput"
+              placeholder="Enter City (e.g. Dubai, London)..."
+            />
+            <button
+              class="search-btn"
+              id="searchBtn"
+              onclick="searchLocation()"
+            >
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="M21 21l-4.35-4.35"></path>
+              </svg>
+            </button>
+            <!-- Dropdown for suggestions -->
+            <div id="searchResults" class="dropdown-results hidden"></div>
+          </div>
+          <!-- Hidden inputs for logic -->
+          <input type="hidden" id="lat" />
+          <input type="hidden" id="lon" />
+        </div>
+
+        <div class="date-grid">
+          <div class="control-group">
+            <label>Start Date</label>
+            <input type="date" id="startDate" />
+          </div>
+          <div class="control-group">
+            <label>End Date</label>
+            <input type="date" id="endDate" />
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label>Time Interval</label>
+          <select id="intervalSelect">
+            <option value="1">Hourly (1 Hour)</option>
+            <option value="3" selected>Standard (3 Hours)</option>
+            <option value="6">Overview (6 Hours)</option>
+            <option value="12">Daily Summary (12 Hours)</option>
+          </select>
+        </div>
+
+        <div class="control-group">
+          <label>Data Points</label>
+          <div class="options-grid" id="checkboxGrid">
+            <!-- JS Generated Checkboxes -->
+          </div>
+        </div>
+
+        <button class="btn-primary" id="startBtn" onclick="startJob()">
+          Initialize Agent Protocol
+        </button>
+      </div>
+
+      <!-- Right Panel: Live Console -->
+      <div class="console-panel">
+        <div class="console-header">
+          <div class="dots">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+          </div>
+          <span style="font-size: 0.8rem; color: #888"
+            >TERMINAL :: AGENT-007</span
+          >
+          <span id="statusIndicator" style="display: none">IDLE</span>
+        </div>
+        <div class="console-log" id="consoleOutput">
+          <div class="log-entry">
+            <span class="timestamp">[12:00:00]</span>
+            <span>System initialized. Waiting for command...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js?v=2.1"></script>
+  </body>
+</html>
