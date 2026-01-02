@@ -6,13 +6,14 @@ To let the AI Agent write data to your Google Sheet, you need to create a "Servi
 
 1.  Go to **[Google Cloud Console](https://console.cloud.google.com/)**.
 2.  Create a **New Project** (e.g., "Weather Agent").
-3.  Search for **"Google Sheets API"** and **Enable** it.
-4.  Search for **"Google Drive API"** and **Enable** it.
-5.  Go to **Credentials** -> **Create Credentials** -> **Service Account**.
-6.  Give it a name (e.g., "agent-bot"). Click **Done**.
-7.  Click on the new Service Account email (e.g., `agent-bot@...iam.gserviceaccount.com`).
-8.  Go to **Keys** tab -> **Add Key** -> **Create new key** -> **JSON**.
-9.  A file (`credential.json`) will download. **Keep this safe!**
+3.  Click on **Enabled API & Services**.
+4.  Search for **"Google Sheets API"** and **Enable** it.
+5.  Search for **"Google Drive API"** and **Enable** it.
+6.  Go to **Credentials** -> **Create Credentials** -> **Service Account**.
+7.  Give it a name (e.g., "agent-bot"). Click **Done**.
+8.  Click on the new Service Account email (e.g., `agent-bot@...iam.gserviceaccount.com`).
+9.  Go to **Keys** tab -> **Add Key** -> **Create new key** -> **JSON**.
+10.  A file (`credential.json`) will download. **Keep this safe!**
 
 ## Step 2: Configure Environment (.env)
 
