@@ -26,20 +26,31 @@
 
 ### 2. Installation
 
-1.  **Clone the Repository:**
+You can either download just this agent or clone the entire repository.
 
-    ```bash
-    git clone https://github.com/Sohail-Shaikh-07/weather-ai-agent.git
-    cd weather-ai-agent
-    ```
+#### Option A: Download Only This Agent (Easiest)
 
-2.  **Install Dependencies:**
+1.  Go to **[download-directory.github.io](https://download-directory.github.io/)**.
+2.  Paste this URL: `https://github.com/Sohail-Shaikh-07/AI-Agents/tree/main/weather-ai-agent`
+3.  Click **Download** to get the zip file.
+4.  Extract the folder and open it in your terminal of choice.
+
+#### Option B: Clone Full Repository
+
+```bash
+git clone https://github.com/Sohail-Shaikh-07/AI-Agents.git
+cd AI-Agents/weather-ai-agent
+```
+
+#### Continue Setup
+
+1.  **Install Dependencies:**
 
     ```bash
     pip install -r requirements.txt
     ```
 
-3.  **Setup Environment:**
+2.  **Setup Environment:**
     - Create a `.env` file (copy `.env.example`).
     - Add your Google Sheet ID and Base64 Credentials.
     - _See [Google Setup Guide](google_setup_guide.md) for help._
@@ -103,5 +114,3 @@ _Note: AQI data includes PM2.5, PM10, CO, and NO₂ automatically when selected.
 - **API Error**: Check your internet connection (Open-Meteo requires public internet).
 
 ---
-
-_Built with ❤️ by Your Name_
