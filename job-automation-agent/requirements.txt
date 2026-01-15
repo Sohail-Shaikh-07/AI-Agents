@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+python-jobspy
+pandas
+resend
+pydantic-settings
+python-dotenv
+openai
+apscheduler
+gspread
+oauth2client
+pypdf
+reportlab
+gspread-formatting
