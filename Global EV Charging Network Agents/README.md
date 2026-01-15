@@ -4,7 +4,7 @@ A professional Python agent designed to autonomously aggregate, clean, and stand
 
 ## 🌟 Features
 
-- **Global Scope**: Iterates through 250+ countries to build a complete world map.
+- **Global Scope**: Iterates through all available regions to map **123+ countries**.
 - **Full History**: Captures `DateCreated` to enable time-series growth analysis (2015-2025).
 - **Smart Mapping**: Automatically resolves IDs (e.g., `OperatorID: 123`) to human-readable names using Reference Data.
 - **Robust ETL**: Handles pagination, rate limits (429), and connection retries.
