@@ -66,13 +66,27 @@ python process_json.py
 
 The final CSV includes high-value columns for analysis:
 
-- `Operator`: Network Provider (e.g., Tesla, Ionity)
-- `MaxPowerKW`: Max charging speed (Fast/Slow analysis)
-- `StatusType`: Operational status (e.g., Operational, Broken)
-- `UsageCost`: Pricing info (Free/Paid)
-- `Country`: Full Country Name
-- `YearCreated`: Installation Year (2010-2026) for growth tracking
-- `ConnectionTypes`: List of supported plugs (Type 2, CCS, CHAdeMO)
+| Column Name       | Description                       | Example                          |
+| :---------------- | :-------------------------------- | :------------------------------- |
+| `StationID`       | Unique Identifier for the station | `12345`                          |
+| `UUID`            | Global Unique ID                  | `123e4567-e89...`                |
+| `DataProviderID`  | Source Data Provider ID           | `1` (OpenChargeMap)              |
+| `Operator`        | The network provider              | `Tesla Supercharger`, `Ionity`   |
+| `UsageType`       | Access Type                       | `Public`, `Private - Restricted` |
+| `UsageCost`       | Cost description                  | `Free`, `$0.40/kWh`              |
+| `StatusType`      | Current operational status        | `Operational`, `Planned`         |
+| `Country`         | Full Country Name                 | `United States`, `Norway`        |
+| `MaxPowerKW`      | Maximum power output (speed)      | `250` (Fast), `7` (Slow)         |
+| `FastChargeCount` | Number of chargers &gt; 40kW         | `8`                              |
+| `ConnectionTypes` | List of supported plugs           | `Type 2, CCS, CHAdeMO`           |
+| `AddressTitle`    | Name of the location              | `Supermarché Match`              |
+| `AddressLine1`    | Street address                    | `13 Rue Lavoisier`               |
+| `Town`            | City or Town                      | `Ronchin`                        |
+| `StateOrProvince` | Region or State                   | `Hauts-de-France`                |
+| `Postcode`        | Postal Code                       | `59790`                          |
+| `Latitude`        | GPS Latitude                      | `50.6040`                        |
+| `Longitude`       | GPS Longitude                     | `3.0760`                         |
+| `YearCreated`     | Year of installation              | `2024`                           |
 
 ## 📜 License
 
