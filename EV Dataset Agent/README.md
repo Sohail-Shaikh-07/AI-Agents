@@ -14,7 +14,7 @@ A professional Python agent designed to autonomously aggregate, clean, and stand
 ## 🛠️ Project Structure
 
 ```bash
-EV_Dataset_Agent/
+EV Dataset Agent/
 ├── main.py               # Entry point (Fetch -> Save JSON -> Convert CSV)
 ├── process_json.py       # Utility: Convert local JSON to CSV (Offline Mode)
 ├── src/
