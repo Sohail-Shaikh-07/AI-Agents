@@ -7,7 +7,7 @@ A professional Python agent designed to autonomously aggregate, clean, and stand
 - **Global Scope**: Iterates through all available regions to map **123+ countries**.
 - **Full History**: Captures `YearCreated` to enable time-series growth analysis (2010-2026).
 - **Architecture**: Professional **JSON-First / ELT Pipeline** ensures zero data loss.
-- **Smart Mapping**: Automatically resolves IDs (e.g., `OperatorID: 123`) to names.
+- **Smart Mapping**: Automatically resolves IDs (e.g., `Operator: 123`) to names.
 - **Robust ETL**: Handles pagination, rate limits (429), and connection retries.
 - **Kaggle-Ready**: Outputs a clean, flat CSV schema optimized for Data Science.
 
