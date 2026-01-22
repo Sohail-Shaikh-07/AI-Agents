@@ -2,6 +2,8 @@
 
 ### ⚡ Comprehensive geospatial data of 257,000+ Stations across 123 Countries. Includes Power, Plugs, and Growth History.
 
+
+
 ## 🚀 Overview
 
 The electric vehicle (EV) revolution is here. This dataset provides a comprehensive, **real-time snapshot** of the global charging infrastructure, capturing over **257,000+ charging stations** across **123 active countries**.
@@ -50,3 +52,4 @@ Unlike other datasets that are outdated or limited to specific regions, this dat
 
 Data sourced from [OpenChargeMap](https://openchargemap.org), the world's largest open global registry of electric vehicle charging locations.
 
+- **License**: Open Data Commons Open Database License (ODbL) v1.0
